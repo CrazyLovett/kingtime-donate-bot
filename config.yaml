@@ -1,0 +1,125 @@
+bot:
+  token: "8343790362:AAG810rvTPdLQ9tEptRH5qkpkPBe0KXceQk"
+
+admins:
+  - 1335389768
+  - 1414803249
+
+payment:
+  fio: "Маклаков Дмитрий Алексеевич"
+  bank: "Озон Банк"
+  card: "40914810400026714630"
+  comment_prefix: "KT"
+  code_length: 8
+
+api:
+  # ЭТОТ ТОКЕН нужно будет прописать и в плагине
+  token: "CHANGE_ME_STRONG_TOKEN"
+  host: "0.0.0.0"
+  port: 8080
+  # путь API (плагин будет дергать https://<твой-домен-на-bothost>/api/...)
+  pull_path: "/api/pull"
+  ack_path: "/api/ack"
+
+bot_link: "https://t.me/KingTimeDonateBot"
+
+products:
+  # Донаты (LuckPerms)
+  tiger:
+    title: "TIGER (навсегда)"
+    price_rub: 239
+    commands: ["lp user {nick} parent add tiger"]
+    announce: "&6донат &lTIGER &f(навсегда)"
+
+  dracula:
+    title: "DRACULA (навсегда)"
+    price_rub: 239
+    commands: ["lp user {nick} parent add dracula"]
+    announce: "&6донат &lDRACULA &f(навсегда)"
+
+  bunny:
+    title: "BUNNY (навсегда)"
+    price_rub: 369
+    commands: ["lp user {nick} parent add bunny"]
+    announce: "&6донат &lBUNNY &f(навсегда)"
+
+  hydra:
+    title: "HYDRA (навсегда)"
+    price_rub: 469
+    commands: ["lp user {nick} parent add hydra"]
+    announce: "&6донат &lHYDRA &f(навсегда)"
+
+  rabbit:
+    title: "RABBIT (навсегда)"
+    price_rub: 569
+    commands: ["lp user {nick} parent add rabbit"]
+    announce: "&6донат &lRABBIT &f(навсегда)"
+
+  dhelper:
+    title: "D.HELPER (навсегда)"
+    price_rub: 699
+    commands: ["lp user {nick} parent add dhelper"]
+    announce: "&6донат &lD.HELPER &f(навсегда)"
+
+  cobra:
+    title: "COBRA (навсегда)"
+    price_rub: 1299
+    commands: ["lp user {nick} parent add cobra"]
+    announce: "&6донат &lCOBRA &f(навсегда)"
+
+  # Кейсы (mooncases) — рилики (важны окончания)
+  rilik_1:
+    title: "Кейс с Риликами x1"
+    price_rub: 50
+    commands: ["cases give {nick} rilik 1"]
+    announce: "&61 кейс с Риликами"
+
+  rilik_3:
+    title: "Кейс с Риликами x3"
+    price_rub: 100
+    commands: ["cases give {nick} rilik 3"]
+    announce: "&63 кейса с Риликами"
+
+  rilik_5:
+    title: "Кейс с Риликами x5"
+    price_rub: 200
+    commands: ["cases give {nick} rilik 5"]
+    announce: "&65 кейсов с Риликами"
+
+  # Остальные кейсы
+  vse_1: { title: "Всё или ничего x1", price_rub: 100, commands: ["cases give {nick} vse 1"], announce: "&61 кейс &f(Всё или ничего)" }
+  vse_3: { title: "Всё или ничего x3", price_rub: 150, commands: ["cases give {nick} vse 3"], announce: "&63 кейса &f(Всё или ничего)" }
+  vse_5: { title: "Всё или ничего x5", price_rub: 250, commands: ["cases give {nick} vse 5"], announce: "&65 кейсов &f(Всё или ничего)" }
+
+  donate_1: { title: "Донат кейс x1", price_rub: 100, commands: ["cases give {nick} donate 1"], announce: "&61 Донат кейс" }
+  donate_3: { title: "Донат кейс x3", price_rub: 150, commands: ["cases give {nick} donate 3"], announce: "&63 Донат кейса" }
+  donate_5: { title: "Донат кейс x5", price_rub: 300, commands: ["cases give {nick} donate 5"], announce: "&65 Донат кейсов" }
+
+  money_1: { title: "Кейс с валютой x1", price_rub: 75, commands: ["cases give {nick} money 1"], announce: "&61 кейс с валютой" }
+  money_3: { title: "Кейс с валютой x3", price_rub: 100, commands: ["cases give {nick} money 3"], announce: "&63 кейса с валютой" }
+  money_5: { title: "Кейс с валютой x5", price_rub: 150, commands: ["cases give {nick} money 5"], announce: "&65 кейсов с валютой" }
+
+  kit_1: { title: "Кейс с китами x1", price_rub: 139, commands: ["cases give {nick} kit 1"], announce: "&61 кейс с китами" }
+  kit_3: { title: "Кейс с китами x3", price_rub: 230, commands: ["cases give {nick} kit 3"], announce: "&63 кейса с китами" }
+  kit_5: { title: "Кейс с китами x5", price_rub: 359, commands: ["cases give {nick} kit 5"], announce: "&65 кейсов с китами" }
+
+  sdonate_1: { title: "Кейс с супер донатом x1", price_rub: 139, commands: ["cases give {nick} sdonate 1"], announce: "&61 кейс с супер донатом" }
+  sdonate_3: { title: "Кейс с супер донатом x3", price_rub: 239, commands: ["cases give {nick} sdonate 3"], announce: "&63 кейса с супер донатом" }
+  sdonate_5: { title: "Кейс с супер донатом x5", price_rub: 359, commands: ["cases give {nick} sdonate 5"], announce: "&65 кейсов с супер донатом" }
+
+  kingcase_1: { title: "Королевский кейс x1", price_rub: 149, commands: ["cases give {nick} kingcase 1"], announce: "&61 Королевский кейс" }
+  kingcase_3: { title: "Королевский кейс x3", price_rub: 250, commands: ["cases give {nick} kingcase 3"], announce: "&63 Королевских кейса" }
+  kingcase_5: { title: "Королевский кейс x5", price_rub: 359, commands: ["cases give {nick} kingcase 5"], announce: "&65 Королевских кейсов" }
+
+  # Услуги (LiteBans)
+  unban:
+    title: "Разбан (LiteBans)"
+    price_rub: 250
+    commands: ["litebans:unban {nick}"]
+    announce: "&aразбан"
+
+  unmute:
+    title: "Размьют (LiteBans)"
+    price_rub: 150
+    commands: ["litebans:unmute {nick}"]
+    announce: "&aразмьют"
