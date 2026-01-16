@@ -1,23 +1,21 @@
 app:
   bot_link: "https://t.me/KingTimeDonateBot"
-  public_url: ""
+  public_url: ""  # можно не трогать, берётся из ENV PUBLIC_URL
 
 bot:
-  token: ""   # берётся из ENV BOT_TOKEN
+  token: ""       # берётся из ENV BOT_TOKEN
 
 api:
-  token: ""   # берётся из ENV API_TOKEN
+  token: ""       # берётся из ENV API_TOKEN
 
 payment:
   fio: "Маклаков Дмитрий Алексеевич"
-  card: ""            # берётся из ENV CARD_NUMBER
+  bank: "Озон Банк"
+  card: ""         # берётся из ENV CARD_NUMBER
   comment_prefix: "KT"
   code_length: 8
 
-# ================== ТОВАРЫ ==================
 products:
-
-  # ---------- ДОНАТ РАНГИ ----------
   magister:
     title: "MAGISTER"
     price: 59
@@ -90,7 +88,55 @@ products:
     commands:
       - "lp user {nick} parent set admin"
 
-  # ---------- КЕЙСЫ ----------
+  # ---- кейсы ----
+  vse_1:
+    title: "1 кейс Всё или ничего"
+    price: 100
+    type: "case"
+    announce: "1 кейс Всё или ничего"
+    commands:
+      - "cases give {nick} vse 1"
+
+  vse_3:
+    title: "3 кейса Всё или ничего"
+    price: 150
+    type: "case"
+    announce: "3 кейса Всё или ничего"
+    commands:
+      - "cases give {nick} vse 3"
+
+  vse_5:
+    title: "5 кейсов Всё или ничего"
+    price: 250
+    type: "case"
+    announce: "5 кейсов Всё или ничего"
+    commands:
+      - "cases give {nick} vse 5"
+
+  donate_1:
+    title: "1 донат кейс"
+    price: 100
+    type: "case"
+    announce: "1 донат кейс"
+    commands:
+      - "cases give {nick} donate 1"
+
+  donate_3:
+    title: "3 донат кейса"
+    price: 150
+    type: "case"
+    announce: "3 донат кейса"
+    commands:
+      - "cases give {nick} donate 3"
+
+  donate_5:
+    title: "5 донат кейсов"
+    price: 300
+    type: "case"
+    announce: "5 донат кейсов"
+    commands:
+      - "cases give {nick} donate 5"
+
   rilik_1:
     title: "1 кейс с Риликами"
     price: 50
@@ -115,31 +161,103 @@ products:
     commands:
       - "cases give {nick} rilik 5"
 
-  sdonate_1:
-    title: "1 супер донат кейс"
+  money_1:
+    title: "1 кейс с валютой"
+    price: 75
+    type: "case"
+    announce: "1 кейс с валютой"
+    commands:
+      - "cases give {nick} money 1"
+
+  money_3:
+    title: "3 кейса с валютой"
+    price: 100
+    type: "case"
+    announce: "3 кейса с валютой"
+    commands:
+      - "cases give {nick} money 3"
+
+  money_5:
+    title: "5 кейсов с валютой"
+    price: 150
+    type: "case"
+    announce: "5 кейсов с валютой"
+    commands:
+      - "cases give {nick} money 5"
+
+  kit_1:
+    title: "1 кейс с Китами"
     price: 139
     type: "case"
-    announce: "1 супер донат кейс"
+    announce: "1 кейс с Китами"
+    commands:
+      - "cases give {nick} kit 1"
+
+  kit_3:
+    title: "3 кейса с Китами"
+    price: 230
+    type: "case"
+    announce: "3 кейса с Китами"
+    commands:
+      - "cases give {nick} kit 3"
+
+  kit_5:
+    title: "5 кейсов с Китами"
+    price: 359
+    type: "case"
+    announce: "5 кейсов с Китами"
+    commands:
+      - "cases give {nick} kit 5"
+
+  sdonate_1:
+    title: "1 кейс с супер донатом"
+    price: 139
+    type: "case"
+    announce: "1 кейс с супер донатом"
     commands:
       - "cases give {nick} sdonate 1"
 
   sdonate_3:
-    title: "3 супер донат кейса"
+    title: "3 кейса с супер донатом"
     price: 239
     type: "case"
-    announce: "3 супер донат кейса"
+    announce: "3 кейса с супер донатом"
     commands:
       - "cases give {nick} sdonate 3"
 
   sdonate_5:
-    title: "5 супер донат кейсов"
+    title: "5 кейсов с супер донатом"
     price: 359
     type: "case"
-    announce: "5 супер донат кейсов"
+    announce: "5 кейсов с супер донатом"
     commands:
       - "cases give {nick} sdonate 5"
 
-  # ---------- УСЛУГИ ----------
+  kingcase_1:
+    title: "1 Королевский кейс"
+    price: 149
+    type: "case"
+    announce: "1 Королевский кейс"
+    commands:
+      - "cases give {nick} kingcase 1"
+
+  kingcase_3:
+    title: "3 Королевских кейса"
+    price: 250
+    type: "case"
+    announce: "3 Королевских кейса"
+    commands:
+      - "cases give {nick} kingcase 3"
+
+  kingcase_5:
+    title: "5 Королевских кейсов"
+    price: 359
+    type: "case"
+    announce: "5 Королевских кейсов"
+    commands:
+      - "cases give {nick} kingcase 5"
+
+  # ---- услуги ----
   unban:
     title: "Разбан"
     price: 250
@@ -156,7 +274,6 @@ products:
     commands:
       - "unmute {nick}"
 
-# ================== АДМИНЫ ==================
 admins:
   - 1335389768
   - 1414803249
