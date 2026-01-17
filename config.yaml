@@ -1,5 +1,5 @@
 app:
-  bot_link: "https://t.me/KingTimeDonateBot"
+  bot_link: "https://t.me/KingTimeDonate_Bot"
   public_url: ""
 
 bot:
@@ -302,3 +302,4 @@ products:
 admins:
   - 1335389768
   - 1414803249
+
